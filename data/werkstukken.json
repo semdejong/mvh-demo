@@ -1,0 +1,331 @@
+[
+ {
+  "categorie": "blisters",
+  "src": "/img/blisters/blisters-01.jpg",
+  "w": 700,
+  "h": 495,
+  "altBasis": "Blistermatrijs"
+ },
+ {
+  "categorie": "blisters",
+  "src": "/img/blisters/blisters-02.jpg",
+  "w": 620,
+  "h": 466,
+  "altBasis": "Blistermatrijs"
+ },
+ {
+  "categorie": "blisters",
+  "src": "/img/blisters/blisters-03.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Blistermatrijs"
+ },
+ {
+  "categorie": "blisters",
+  "src": "/img/blisters/blisters-04.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Blistermatrijs"
+ },
+ {
+  "categorie": "eps",
+  "src": "/img/eps/eps-01.jpg",
+  "w": 720,
+  "h": 540,
+  "altBasis": "EPS-vorm"
+ },
+ {
+  "categorie": "eps",
+  "src": "/img/eps/eps-02.jpg",
+  "w": 720,
+  "h": 540,
+  "altBasis": "EPS-vorm"
+ },
+ {
+  "categorie": "eps",
+  "src": "/img/eps/eps-03.jpg",
+  "w": 720,
+  "h": 540,
+  "altBasis": "EPS-vorm"
+ },
+ {
+  "categorie": "hero",
+  "src": "/img/hero/hero-01.jpg",
+  "w": 1440,
+  "h": 773,
+  "altBasis": "Gefreesde aluminium matrijs"
+ },
+ {
+  "categorie": "machine",
+  "src": "/img/machine/machine-01.jpg",
+  "w": 670,
+  "h": 440,
+  "altBasis": "Machinepark MVH"
+ },
+ {
+  "categorie": "machine",
+  "src": "/img/machine/machine-02.jpg",
+  "w": 1800,
+  "h": 1013,
+  "altBasis": "Machinepark MVH"
+ },
+ {
+  "categorie": "pand",
+  "src": "/img/pand/pand-01.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Bedrijfspand MVH aan de Metaalstraat in Haaksbergen"
+ },
+ {
+  "categorie": "pand",
+  "src": "/img/pand/pand-02.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Bedrijfspand MVH aan de Metaalstraat in Haaksbergen"
+ },
+ {
+  "categorie": "pand",
+  "src": "/img/pand/pand-03.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Bedrijfspand MVH aan de Metaalstraat in Haaksbergen"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-01.jpg",
+  "w": 800,
+  "h": 600,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-02.jpg",
+  "w": 800,
+  "h": 600,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-03.jpg",
+  "w": 800,
+  "h": 600,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-04.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-05.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-06.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-07.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-08.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-09.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "rotatie",
+  "src": "/img/rotatie/rotatie-10.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Rotatievorm"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-01.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-02.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-03.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-04.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-05.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-06.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-07.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "spuitgietwerk",
+  "src": "/img/spuitgietwerk/spuitgietwerk-08.jpg",
+  "w": 1800,
+  "h": 1344,
+  "altBasis": "Spuitgietmatrijs"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-01.jpg",
+  "w": 800,
+  "h": 600,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-02.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-03.jpg",
+  "w": 800,
+  "h": 533,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-04.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-05.jpg",
+  "w": 640,
+  "h": 480,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-06.jpg",
+  "w": 800,
+  "h": 598,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-07.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-08.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-09.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-10.jpg",
+  "w": 640,
+  "h": 478,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-11.jpg",
+  "w": 1328,
+  "h": 747,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-12.jpg",
+  "w": 1328,
+  "h": 747,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-13.jpg",
+  "w": 1328,
+  "h": 747,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-14.jpg",
+  "w": 1008,
+  "h": 567,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-15.jpg",
+  "w": 1008,
+  "h": 567,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ },
+ {
+  "categorie": "vrije-vorm",
+  "src": "/img/vrije-vorm/vrije-vorm-16.jpg",
+  "w": 1008,
+  "h": 567,
+  "altBasis": "Vrij gefreesd werkstuk / prototype"
+ }
+]
