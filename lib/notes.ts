@@ -22,7 +22,7 @@ export const notes: Record<AppSlug, Note> = {
       { k: "Pad", v: "3D CAD-CAM, frezen, afwerken waar nodig, schoonmaken, zelf afleveren." },
       { k: "Op de foto", v: "Drie opnames. De eerste: een grote donkere vormplaat onder de frees." },
       { k: "Materiaal", v: "Van deze plaat niet vermeld. Bridgeport: hout, kunststof en aluminium." },
-      { k: "Bereik", v: "Grootste gedocumenteerde reis: X 1600 · Y 820 · Z 600 mm." },
+      { k: "Bereik", v: "Grootste werkbereik: X 1600 · Y 820 · Z 600 mm." },
     ],
   },
   spuitgietwerk: {

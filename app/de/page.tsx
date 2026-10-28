@@ -41,7 +41,7 @@ export default function GermanHome() {
             <DimensionFrame
               x="Arbeitsraum X 1600"
               y="Y 820"
-              caption="Aluminiumform beim Fräsen. Die Maße sind der größte dokumentierte Arbeitsraum (Hartford MVP 16), nicht das Maß dieses Werkstücks. Z 600 mm."
+              caption="Aluminiumform beim Fräsen. Die Maße sind der größte Arbeitsraum im Maschinenpark (Hartford MVP 16), nicht das Maß dieses Werkstücks. Z 600 mm."
             >
               <MillReveal>
                 <Image

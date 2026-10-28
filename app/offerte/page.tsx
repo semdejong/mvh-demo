@@ -24,7 +24,7 @@ const faq = [
   },
   {
     q: "Welke materialen frezen jullie?",
-    a: "De Bridgeport XR 1270 is geschikt voor hout, kunststof en aluminium. Materialen op de andere machines: [door klant te bevestigen].",
+    a: "De Bridgeport XR 1270 is geschikt voor hout, kunststof en aluminium. Werkt u met een ander materiaal? Vermeld het in uw aanvraag, dan stemmen we het af.",
   },
   {
     q: "Boren jullie ook de vacuümgaatjes en maken jullie de matrijs schoon?",

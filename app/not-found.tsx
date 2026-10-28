@@ -5,7 +5,7 @@ import Programme from "@/components/site/Programme";
 
 export const metadata: Metadata = {
   title: "Pagina niet gevonden",
-  description: "Deze pagina staat niet op de site van Matrijzen & Vormenbouw Haaksbergen.",
+  description: "Deze pagina bestaat niet bij Matrijzen & Vormenbouw Haaksbergen.",
 };
 
 export default function NotFound() {

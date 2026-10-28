@@ -82,7 +82,7 @@ export default function MachineparkPage() {
                   },
                   {
                     k: "MVP 16",
-                    v: "Hartford, 3-assig. X 1600 · Y 820 · Z 600. Grootste gedocumenteerde werkbereik. ",
+                    v: "Hartford, 3-assig. X 1600 · Y 820 · Z 600. Grootste werkbereik in het machinepark.",
                   },
                   {
                     k: "LG 1370",

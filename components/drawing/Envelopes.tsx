@@ -51,8 +51,8 @@ export default function Envelopes({ locale = "nl" }: { locale?: "nl" | "de" }) {
       </svg>
       <figcaption className="caption max-w-[68ch]">
         {de
-          ? "Drei dokumentierte Arbeitsräume, linksbündig auf X0 Y0. Außenmaß: Hartford MVP 16, X 1600 · Y 820, durchgezogen. LG 1370 gestrichelt. Bridgeport XR 1270 in der Werkzeugbahnfarbe. Z steht in der Tabelle, nicht in dieser Draufsicht."
-          : "Drie gedocumenteerde werkbereiken, links uitgelijnd op X0 Y0. Buitenmaat: Hartford MVP 16, X 1600 · Y 820, getrokken lijn. LG 1370 gestippeld. Bridgeport XR 1270 in de kleur van de gereedschapsbaan. Z staat in de tabel, niet in dit bovenaanzicht."}
+          ? "Drei Arbeitsräume, linksbündig auf X0 Y0. Außenmaß: Hartford MVP 16, X 1600 · Y 820, durchgezogen. LG 1370 gestrichelt. Bridgeport XR 1270 in der Werkzeugbahnfarbe. Z steht in der Tabelle, nicht in dieser Draufsicht."
+          : "Drie werkbereiken, links uitgelijnd op X0 Y0. Buitenmaat: Hartford MVP 16, X 1600 · Y 820, getrokken lijn. LG 1370 gestippeld. Bridgeport XR 1270 in de kleur van de gereedschapsbaan. Z staat in de tabel, niet in dit bovenaanzicht."}
       </figcaption>
       <ul className="mt-3 list-none p-0 m-0">
         {machines.map((machine) => (
@@ -93,8 +93,8 @@ export function EnvelopeDrawing({ locale = "nl" }: { locale?: "nl" | "de" }) {
       </svg>
       <figcaption className="caption">
         {de
-          ? "Grösster dokumentierter Arbeitsraum: Hartford MVP 16, X 1600 × Y 820 × Z 600 mm. Ob ein Teil hineinpasst, hängt von Form und Aufspannung ab."
-          : "Grootste gedocumenteerde werkbereik: Hartford MVP 16, X 1600 × Y 820 × Z 600 mm. Of een stuk daarbinnen past, hangt af van de vorm en de opspanning."}
+          ? "Größter Arbeitsraum: Hartford MVP 16, X 1600 × Y 820 × Z 600 mm. Ob ein Teil hineinpasst, hängt von Form und Aufspannung ab."
+          : "Grootste werkbereik: Hartford MVP 16, X 1600 × Y 820 × Z 600 mm. Of een stuk daarbinnen past, hangt af van de vorm en de opspanning."}
       </figcaption>
     </figure>
   );

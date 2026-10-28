@@ -53,7 +53,7 @@ export default function HomePage() {
                   <DimensionFrame
                     x="werkbereik X 1600"
                     y="Y 820"
-                    caption="Aluminium matrijs tijdens het frezen. De maten zijn het grootste gedocumenteerde werkbereik (Hartford MVP 16), niet de maat van dit werkstuk. Z 600 mm."
+                    caption="Aluminium matrijs tijdens het frezen. De maten zijn het grootste werkbereik in het machinepark (Hartford MVP 16), niet de maat van dit werkstuk. Z 600 mm."
                   >
                     <MillReveal>
                       <Image
