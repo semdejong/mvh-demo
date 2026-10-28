@@ -57,9 +57,6 @@ export default function ContactPage() {
                     Route in Google Maps
                   </a>
                 </p>
-                <p className="measure">Openingstijden: {company.hours}</p>
-                <p className="measure">Parkeren en laden en lossen: {company.parking}</p>
-                <p className="measure">KvK: {company.kvk}</p>
               </div>
               <div>
                 <h2 className="display">Personen</h2>
@@ -90,8 +87,6 @@ export default function ContactPage() {
                     { k: "Tekening", v: "Via het formulier: 2D of 3D, materiaal, aantallen, vormmachine, gewenste levertijd." },
                     { k: "Adres", v: `${company.street}, ${company.postalCode} ${company.city}. ${company.border}.` },
                     { k: "Kaart", v: "Een link naar Google Maps, geen ingebedde kaart." },
-                    { k: "Open", v: `Openingstijden: ${company.hours}.` },
-                    { k: "Laden", v: `Parkeren en laden en lossen: ${company.parking}.` },
                   ]}
                 />
                 <p>

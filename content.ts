@@ -1,6 +1,6 @@
 /**
  * Bedrijfsgegevens van MVH. Kleuren uit het logo.
- * Ontbrekende feiten blijven als [door klant …] staan — niet invullen.
+ * Alleen feiten die op mvhaaksbergen.nl staan; niets verzonnen.
  */
 export const content = {
   slug: "mvh-demo",
@@ -20,9 +20,6 @@ export const content = {
     phoneShort: "053 572 44 22",
     mapsHref:
       "https://www.google.com/maps/search/?api=1&query=Metaalstraat+20a%2C+7483+PD+Haaksbergen",
-    kvk: "[door klant aan te vullen]",
-    hours: "[door klant aan te vullen]",
-    parking: "[door klant aan te vullen]",
     founded: "januari 2008",
     youtube: "https://www.youtube.com/@mvhaaksbergen",
     border: "bedrijventerrein, ongeveer 5 km van de Duitse grens",

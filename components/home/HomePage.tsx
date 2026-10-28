@@ -380,8 +380,6 @@ export default function HomePage() {
                   Route in Google Maps
                 </a>
               </p>
-              <p className="measure m-0">Openingstijden: {company.hours}</p>
-              <p className="measure">Parkeren en laden en lossen: {company.parking}</p>
               <p>
                 <Link href="/contact" className="text-navy" data-cta="offerte">
                   Contactpagina

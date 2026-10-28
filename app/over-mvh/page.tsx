@@ -86,9 +86,6 @@ export default function OverPage() {
               <p className="lede">
                 {company.street}, {company.postalCode} {company.city}. Het pand staat op een {company.border}. De rode gevel met de gebogen glaspartij is het gebouw op de foto’s.
               </p>
-              <p className="measure">
-                Openingstijden: {company.hours}. Parkeren en laden en lossen: {company.parking}. KvK: {company.kvk}.
-              </p>
               <ul className="mosaic mt-6">
                 {pand.map((photo) => (
                   <li key={photo.src}>

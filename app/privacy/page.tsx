@@ -27,7 +27,6 @@ export default function PrivacyPage() {
               { k: "Formulier", v: "Geen backend. Niets wordt opgeslagen, gemaild of geüpload." },
               { k: "Cookies", v: "Geen volgcookies. Wel een cookieloze demo-teller voor dit concept." },
               { k: "Zoeken", v: "noindex en robots.txt op Disallow. Niet bedoeld om geïndexeerd te worden." },
-              { k: "Echte site", v: "Verwerkingsverantwoordelijke en privacycontact: [door klant aan te vullen]." },
             ]}
           />
           <p>
@@ -50,13 +49,11 @@ export default function PrivacyPage() {
             </Link>
             .
           </p>
-          <p>KvK: {company.kvk}</p>
-          <p>Functionaris of contact voor privacyverzoeken: [door klant aan te vullen].</p>
           <h2 className="display mt-8" lang="de">
             Kurz auf Deutsch
           </h2>
           <p lang="de">
-            Dies ist eine Konzeptwebsite. Das Formular sendet nichts und lädt keine Datei hoch. Es werden keine Tracking-Cookies gesetzt. Ein kochiefreier Demo-Zähler erfasst den Seitenaufruf dieser Konzeptseite. Die Datenschutz-Kontaktperson des Betriebs: [vom Kunden zu ergänzen].
+            Dies ist eine Konzeptwebsite. Das Formular sendet nichts und lädt keine Datei hoch. Es werden keine Tracking-Cookies gesetzt. Ein cookiefreier Demo-Zähler erfasst den Seitenaufruf dieser Konzeptseite.
           </p>
         </div>
       </section>

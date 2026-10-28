@@ -24,8 +24,7 @@ export default function GermanJobs() {
               <Programme
                 rows={[
                   { k: "Offen", v: "Keine. Derzeit gibt es keine offenen Stellen." },
-                  { k: "Funktionen", v: "Auf der Website nicht genannt." },
-                  { k: "Initiativ", v: "[vom Kunden zu bestätigen]. Bis dahin steht hier keine Bewerbungsadresse." },
+                  { k: "Funktionen", v: "Derzeit keine." },
                   { k: "Kontakt", v: "Allgemeiner Kontakt über die Kontaktseite, kein Bewerbungsformular." },
                 ]}
               />

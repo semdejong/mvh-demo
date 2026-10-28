@@ -51,8 +51,8 @@ export default function Footer() {
             </p>
           </div>
           <div className="tb-cell">
-            <span className="mono">KVK</span>
-            <p>{company.kvk}</p>
+            <span className="mono">{de ? "SEIT" : "SINDS"}</span>
+            <p>{de ? "Januar 2008" : "januari 2008"}</p>
             <p className="mono mt-2 text-[0.68rem]">
               {de ? "BLATT web · MAßSTAB —" : "BLAD web · SCHAAL —"}
             </p>

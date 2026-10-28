@@ -36,11 +36,11 @@ const faq = [
   },
   {
     q: "Welke bestandsformaten kan ik aanleveren?",
-    a: "Welke formaten MVH in productie vraagt, is [door klant te bevestigen]. Op dit conceptformulier kunt u een bestand kiezen met de extensie step, stp, igs, iges, stl, dxf, dwg of pdf. Het bestand wordt in deze demo niet verstuurd.",
+    a: "In het formulier kunt u een bestand kiezen met de extensie step, stp, igs, iges, stl, dxf, dwg of pdf. Het bestand wordt in deze demo niet verstuurd.",
   },
   {
     q: "Werken jullie ook voor klanten in Duitsland?",
-    a: "Haaksbergen ligt op een bedrijventerrein, ongeveer 5 km van de Duitse grens, en er is een Duitse pagina. Of MVH opdrachten uit Duitsland aanneemt: [door klant te bevestigen].",
+    a: "Haaksbergen ligt ongeveer 5 km van de Duitse grens en de site heeft een Duitse pagina. Bel of stuur uw tekening, dan bespreken we uw aanvraag.",
   },
   {
     q: "Hoe snel kan een matrijs klaar zijn?",

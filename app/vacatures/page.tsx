@@ -35,7 +35,6 @@ export default function VacaturesPage() {
                   rows={[
                     { k: "Open", v: "Geen. Momenteel zijn er geen vacatures." },
                     { k: "Functies", v: "Op dit moment geen." },
-                    { k: "Open sollicitatie", v: "[door klant te bevestigen]. Tot die tijd staat hier geen sollicitatie-adres." },
                     { k: "Werk in de hal", v: "Matrijzen en vormen: 3D CAD-CAM, frezen, afwerken, zelf afleveren." },
                   ]}
                 />

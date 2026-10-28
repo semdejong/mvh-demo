@@ -245,7 +245,7 @@ export default function QuoteForm() {
         <label htmlFor="bestand">Bestand</label>
         <input id="bestand" name="bestand" type="file" accept={content.fileAccept} aria-invalid={errors.bestand ? "true" : undefined} />
         <p className="caption">
-          STEP, STP, IGES, IGS, STL, DXF, DWG of PDF. In deze demo wordt niets geüpload. Welke formaten MVH in productie vraagt: [door klant te bevestigen].
+          STEP, STP, IGES, IGS, STL, DXF, DWG of PDF. In deze demo wordt niets geüpload.
         </p>
         {errors.bestand ? <p className="form-error">{errors.bestand}</p> : null}
       </div>

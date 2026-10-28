@@ -58,8 +58,6 @@ export default function GermanContact() {
                   Route in Google Maps
                 </a>
               </p>
-              <p>Öffnungszeiten: [vom Kunden zu ergänzen]</p>
-              <p>Parken und Be- und Entladen: [vom Kunden zu ergänzen]</p>
             </div>
             <div>
               <h2 className="display">Personen</h2>
@@ -84,8 +82,6 @@ export default function GermanContact() {
                     { k: "Zeichnung", v: "Über das Formular, auf Niederländisch. Land Deutschland steht zur Wahl." },
                     { k: "Adresse", v: `${company.street}, ${company.postalCode} ${company.city}. Gewerbegebiet, etwa 5 km von der deutschen Grenze.` },
                     { k: "Karte", v: "Ein Link zu Google Maps, keine eingebettete Karte." },
-                    { k: "Offen", v: "Öffnungszeiten: [vom Kunden zu ergänzen]." },
-                    { k: "Laden", v: "Parken und Be- und Entladen: [vom Kunden zu ergänzen]." },
                   ]}
                 />
                 <p>
