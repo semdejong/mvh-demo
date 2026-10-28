@@ -137,12 +137,12 @@ export default function OverPage() {
                 {people.map((person) => (
                   <li key={person.email}>
                     <span className="tick" aria-hidden="true" />
-                    <strong>{person.name}</strong>
-                    <span>
+                    <div>
+                      <strong className="block">{person.name}</strong>
                       <Link href="/contact" className="text-navy">
                         Gegevens op de contactpagina
                       </Link>
-                    </span>
+                    </div>
                   </li>
                 ))}
               </ul>
