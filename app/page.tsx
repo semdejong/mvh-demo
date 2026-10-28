@@ -1,23 +1,12 @@
-import Header from "@/components/sections/Header";
-import Hero from "@/components/sections/Hero";
-import Services from "@/components/sections/Services";
-import About from "@/components/sections/About";
-import Reviews from "@/components/sections/Reviews";
-import Contact from "@/components/sections/Contact";
-import Footer from "@/components/sections/Footer";
+import type { Metadata } from "next";
+import { content } from "@/content";
+import HomePage from "@/components/home/HomePage";
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <Services />
-        <About />
-        <Reviews />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  );
+export const metadata: Metadata = {
+  title: { absolute: content.seo.title },
+  description: content.seo.description,
+};
+
+export default function Page() {
+  return <HomePage />;
 }

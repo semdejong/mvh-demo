@@ -1,14 +1,29 @@
 import type { Metadata, Viewport } from "next";
-import { Geist } from "next/font/google";
+import { Archivo, Martian_Mono } from "next/font/google";
 import type { CSSProperties } from "react";
 import "./globals.css";
 import { content } from "@/content";
 import SleadsBadge from "@/components/SleadsBadge";
+import SiteFrame from "@/components/site/SiteFrame";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const archivo = Archivo({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-archivo",
+  axes: ["wdth"],
+});
+
+const martian = Martian_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-martian",
+});
 
 export const metadata: Metadata = {
-  title: content.seo.title,
+  title: {
+    default: "Matrijzen & Vormenbouw Haaksbergen",
+    template: "%s — Matrijzen & Vormenbouw Haaksbergen",
+  },
   description: content.seo.description,
   robots: {
     index: false,
@@ -16,12 +31,15 @@ export const metadata: Metadata = {
     nocache: true,
     googleBot: { index: false, follow: false, noimageindex: true },
   },
-  icons: content.company.logo ? { icon: content.company.logo } : undefined,
+  icons: content.company.logo ? { icon: content.company.emblem } : undefined,
 };
 
-export const viewport: Viewport = { themeColor: content.colors.primary };
+export const viewport: Viewport = {
+  themeColor: content.colors.primary,
+  width: "device-width",
+  initialScale: 1,
+};
 
-// Sleads demo-analytics (cookieloos). Events tellen alleen voor slugs die via POST /api/demos geregistreerd zijn.
 const TRACKER_SRC = "https://sleads-demo-analytics.vercel.app/t.js";
 const TRACKER_ENDPOINT = "https://basic-tiger-117.convex.site/track";
 
@@ -37,12 +55,15 @@ const themeVars = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang={content.seo.lang} style={themeVars} className={`${geistSans.variable} h-full scroll-smooth antialiased`}>
+    <html lang={content.seo.lang} style={themeVars} className={`${archivo.variable} ${martian.variable} h-full antialiased`}>
       <head>
         <script async src={TRACKER_SRC} data-demo={content.slug} data-endpoint={TRACKER_ENDPOINT} />
       </head>
       <body className="min-h-full flex flex-col">
-        {children}
+        <a className="skip" href="#inhoud">
+          Naar inhoud
+        </a>
+        <SiteFrame>{children}</SiteFrame>
         <SleadsBadge />
       </body>
     </html>
