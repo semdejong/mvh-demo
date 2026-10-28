@@ -99,8 +99,8 @@ export const content = {
 
   valuesDe: [
     { title: "Lieferzeit", text: "Lieferzeit steht bei uns hoch im Kurs. Eine Frist sprechen wir je Werkzeug ab. Eine feste Durchlaufzeit steht nicht auf der Website." },
-    { title: "Flexibilität", text: "Wir denken lösungsorientiert mit, von der Zeichnung bis zur Nacharbeit." },
     { title: "Qualität", text: "Das Werkzeug wird gefräst, wo nötig weiterbearbeitet und gereinigt, bevor es das Haus verlässt." },
+    { title: "Flexibilität", text: "Wir denken lösungsorientiert mit, von der Zeichnung bis zur Nacharbeit." },
     { title: "Kompetenz", text: "Wir entwickeln selbst mit einem 3D-CAD-CAM-Programm und fräsen auf eigenen CNC-Bearbeitungszentren." },
     { title: "Gutes Preis-Qualitätsverhältnis", text: "Einer der fünf Punkte seit dem Start 2008. Einen Preis nennen wir zur konkreten Anfrage, nicht auf dieser Website." },
   ],

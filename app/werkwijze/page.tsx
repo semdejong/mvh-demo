@@ -39,7 +39,7 @@ export default function WerkwijzePage() {
               const src = photos[step.id];
               const photo = src?.startsWith("/img/abstract/") ? undefined : src ? photoBySrc(src) : undefined;
               return (
-                <article key={step.id} className="step" data-toolpath-node>
+                <article key={step.id} id={step.id} className="step" data-toolpath-node>
                   <div className="step-copy">
                     <p className="step-op">
                       {step.op} · {step.detail}

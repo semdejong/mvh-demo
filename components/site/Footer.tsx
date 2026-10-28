@@ -54,7 +54,7 @@ export default function Footer() {
             <span className="mono">KVK</span>
             <p>{company.kvk}</p>
             <p className="mono mt-2 text-[0.68rem]">
-              {de ? "BLATT web · MASSSTAB —" : "BLAD web · SCHAAL —"}
+              {de ? "BLATT web · MAßSTAB —" : "BLAD web · SCHAAL —"}
             </p>
           </div>
         </div>

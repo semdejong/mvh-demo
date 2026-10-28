@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/content";
-import { notes } from "@/lib/notes";
 import { photoBySrc } from "@/lib/photos";
 import PageIntro from "@/components/site/PageIntro";
 import Programme from "@/components/site/Programme";
+import ApplicationIndex from "@/components/site/ApplicationIndex";
 import { Tick } from "@/components/site/Marks";
 import Envelopes from "@/components/drawing/Envelopes";
+import DimensionFrame from "@/components/media/DimensionFrame";
+import MillReveal from "@/components/media/MillReveal";
 
 export const metadata: Metadata = {
   title: "Formen für Thermoformen und Vakuumformen",
@@ -36,27 +38,35 @@ export default function GermanHome() {
         </div>
         {hero ? (
           <div className="mt-8 max-w-[720px]">
-            <Image
-              src={hero.src}
-              alt="Aluminiumform auf dem Maschinentisch beim Fräsen, mit sichtbarer Schlichtbahn"
-              width={hero.w}
-              height={hero.h}
-              priority
-              sizes="(max-width: 800px) 100vw, 720px"
-              className="w-full h-auto border border-navy"
-              style={{ maxWidth: hero.w }}
-            />
-            <p className="caption">Arbeitsraum bis X 1600 · Y 820 · Z 600 mm. Das ist nicht das Mass dieses Werkstücks.</p>
+            <DimensionFrame
+              x="Arbeitsraum X 1600"
+              y="Y 820"
+              caption="Aluminiumform beim Fräsen. Die Maße sind der größte dokumentierte Arbeitsraum (Hartford MVP 16), nicht das Maß dieses Werkstücks. Z 600 mm."
+            >
+              <MillReveal>
+                <Image
+                  src={hero.src}
+                  alt="Aluminiumform auf dem Maschinentisch beim Fräsen, mit sichtbarer Schlichtbahn"
+                  width={hero.w}
+                  height={hero.h}
+                  priority
+                  sizes="(max-width: 800px) 100vw, 720px"
+                  style={{ maxWidth: hero.w }}
+                />
+              </MillReveal>
+            </DimensionFrame>
           </div>
         ) : null}
       </PageIntro>
 
       <section data-section="intro" className="section">
-        <div className="wrap measure">
-          <p className="kicker" data-toolpath-node>
-            START
-          </p>
-          <p>
+        <div className="wrap">
+          <div className="section-grid">
+            <p className="kicker" data-toolpath-node>
+              START
+            </p>
+            <div>
+          <p className="measure">
             Matrijzen & Vormenbouw Haaksbergen ist ein junges Unternehmen, das sich auf dem Markt für Thermoformen und Vakuumformen eine eigene Position erarbeitet hat. Dazu gehört ein eigener Maschinenpark.
           </p>
           <p>
@@ -65,6 +75,8 @@ export default function GermanHome() {
           <p>
             Aktiv seit Januar 2008. Begonnen mit einem neuen CNC-Bearbeitungszentrum. Zwei Monate später folgte ein zweites, weil die Nachfrage stark stieg und die Produktion schnell wuchs.
           </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -118,19 +130,7 @@ export default function GermanHome() {
             <div>
               <h2 className="display">Anwendungen</h2>
               <p className="lede">Sechs Eingänge. Die Fotoseiten stehen auf Niederländisch, mit den Werkstattfotos.</p>
-              <ul className="index-list mt-4">
-                {content.applications.map((app) => (
-                  <li key={app.slug} className="index-row">
-                    <Link href={`/toepassingen/${app.slug}`}>
-                      <span>
-                        <span className="mono text-xs">{notes[app.slug].terms}</span>
-                        <strong>{notes[app.slug].deTitle}</strong>
-                        <p>{notes[app.slug].deText}</p>
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <ApplicationIndex locale="de" />
             </div>
           </div>
         </div>
@@ -139,10 +139,10 @@ export default function GermanHome() {
       <section data-section="machinepark" className="section">
         <div className="wrap">
           <div className="section-grid">
-            <p className="kicker">X 1600 · Y 820 · Z 600</p>
+            <p className="kicker">RAUM</p>
             <div>
               <h2 className="display">Maschinenpark</h2>
-              <p className="lede">Drei Fräsmaschinen sind mit Massen dokumentiert. Die Website nennt sechs. {content.cam.noteDe}</p>
+              <p className="lede">Drei Fräsmaschinen sind mit Maßen dokumentiert. Die Website nennt sechs. {content.cam.noteDe}</p>
               <Envelopes locale="de" />
               <p className="mt-4">
                 <Link href="/de/maschinenpark" className="text-navy">
@@ -156,15 +156,20 @@ export default function GermanHome() {
 
       <section data-section="offerte" className="section navy-band">
         <div className="wrap">
-          <h2 className="display">Zeichnung senden</h2>
-          <p className="lede">Das Formular steht auf Niederländisch. Land Deutschland können Sie dort wählen.</p>
-          <div className="cta-row">
-            <Link className="btn btn-on-navy" href="/offerte" data-cta="offerte">
-              Zum Formular
-            </Link>
-            <Link className="btn btn-on-navy-ghost" href="/de/kontakt">
-              Kontakt
-            </Link>
+          <div className="section-grid">
+            <p className="kicker">ANFRAGE</p>
+            <div>
+              <h2 className="display">Zeichnung senden</h2>
+              <p className="lede">Das Formular steht auf Niederländisch. Land Deutschland können Sie dort wählen.</p>
+              <div className="cta-row">
+                <Link className="btn btn-on-navy" href="/offerte" data-cta="offerte">
+                  Zum Formular
+                </Link>
+                <Link className="btn btn-on-navy-ghost" href="/de/kontakt">
+                  Kontakt
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -29,6 +29,10 @@ export default function Header() {
   const cta = locale === "de" ? "Zeichnung senden" : "Tekening sturen";
   const nlHref = switchHref(pathname, "nl");
   const deHref = switchHref(pathname, "de");
+  const current = (href: string) => {
+    if (href === "/" || href === "/de") return pathname === href;
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   useEffect(() => {
     setOpen(false);
@@ -76,7 +80,7 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header data-section="header" className="sticky top-0 z-30 border-b border-line bg-page">
+    <header data-section="header" className="site-header sticky top-0 z-30 border-b border-line">
       <div className="wrap">
         <div className="header-bar">
         <Link href={locale === "de" ? "/de" : "/"} className="header-logo inline-flex items-center min-h-11">
@@ -136,7 +140,7 @@ export default function Header() {
         </div>
         <nav className="nav-desktop" aria-label={locale === "de" ? "Hauptmenü" : "Hoofdmenu"}>
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} aria-current={pathname === item.href ? "page" : undefined}>
+            <Link key={item.href} href={item.href} aria-current={current(item.href) ? "page" : undefined}>
               {item.label}
             </Link>
           ))}

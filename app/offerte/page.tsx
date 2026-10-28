@@ -91,7 +91,7 @@ export default function OffertePage() {
         <div className="wrap">
           <div className="section-grid">
             <p className="kicker" data-toolpath-node>
-              X 1600 · Y 820 · Z 600
+              BEREIK
             </p>
             <div>
               <h2 className="display">Grootste werkbereik</h2>

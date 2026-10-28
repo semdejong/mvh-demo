@@ -83,7 +83,7 @@ export default function ContactPage() {
             </p>
             <div className="pair">
               <div>
-                <h2 className="display">Twee manieren</h2>
+                <h2 className="display">Routeblad</h2>
                 <Programme
                   rows={[
                     { k: "Bellen", v: `${company.phoneDisplay}. Voor een tekening is Lutz Noordink het aanspreekpunt op de aanvraagpagina.` },

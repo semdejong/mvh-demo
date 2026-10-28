@@ -36,7 +36,7 @@ export default function MachineSheet({ locale = "nl" }: { locale?: Locale }) {
     <table className="spec">
       <caption>
         {de
-          ? "Die Website nennt sechs Fräsmaschinen. Drei sind mit Massen dokumentiert. Die anderen drei sind nicht ausgefüllt."
+          ? "Die Website nennt sechs Fräsmaschinen. Drei sind mit Maßen dokumentiert. Die anderen drei sind nicht ausgefüllt."
           : "De site noemt zes freesbanken. Drie zijn met maten gedocumenteerd. De andere drie zijn niet ingevuld."}
       </caption>
       <thead>

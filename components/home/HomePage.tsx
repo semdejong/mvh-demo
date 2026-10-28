@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/content";
-import { photoBySrc, photosByCategory } from "@/lib/photos";
+import { photoBySrc } from "@/lib/photos";
+import ApplicationIndex from "@/components/site/ApplicationIndex";
 import { OriginMark, Tick, CtaRow } from "@/components/site/Marks";
 import DimensionFrame from "@/components/media/DimensionFrame";
 import MillReveal from "@/components/media/MillReveal";
@@ -79,9 +80,18 @@ export default function HomePage() {
             <p className="kicker" data-toolpath-node>
               PAD
             </p>
-            <p className="mono text-navy text-base m-0 max-w-[68ch]">
-              ontwerpen (3D CAD-CAM) · frezen (cnc) · afwerken · afleveren
-            </p>
+            <ol className="op-strip">
+              {content.process.map((step) => (
+                <li key={step.id}>
+                  <Link href={`/werkwijze#${step.id}`}>
+                    <span className="mono">
+                      {step.op} · {step.detail}
+                    </span>
+                    <strong>{step.title}</strong>
+                  </Link>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
@@ -94,31 +104,8 @@ export default function HomePage() {
             </p>
             <div>
               <h2 className="display">Toepassingen</h2>
-              <p className="lede">Zes soorten werk, met foto’s uit de werkplaats.</p>
-              <ul className="index-list mt-6">
-                {content.applications.map((app) => {
-                  const shot =
-                    app.category === "plugs"
-                      ? photoBySrc("/img/hero/hero-01.jpg")
-                      : photosByCategory(app.category)[0];
-                  return (
-                    <li key={app.slug} className="index-row">
-                      <Link href={`/toepassingen/${app.slug}`}>
-                        <span>
-                          <span className="mono text-xs text-navy">{app.short}</span>
-                          <strong>{app.title}</strong>
-                          <p>{app.summary}</p>
-                        </span>
-                        {shot ? (
-                          <span className="index-photo">
-                            <Image src={shot.src} alt={shot.alt} width={shot.w} height={shot.h} sizes="200px" />
-                          </span>
-                        ) : null}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              <p className="lede">Zes soorten werk, met foto’s uit de werkplaats. Van plugs staat geen foto op de site.</p>
+              <ApplicationIndex />
             </div>
           </div>
         </div>

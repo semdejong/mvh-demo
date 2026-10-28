@@ -15,28 +15,44 @@ export default function Envelopes({ locale = "nl" }: { locale?: "nl" | "de" }) {
       <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-labelledby="env-title" className="w-full max-w-[460px] h-auto">
         <title id="env-title">
           {de
-            ? "Arbeitsraum im Vergleich, Draufsicht X-Y, gleicher Massstab"
+            ? "Arbeitsraum im Vergleich, Draufsicht X-Y, gleicher Maßstab"
             : "Werkbereik vergeleken, bovenaanzicht X-Y, dezelfde schaal"}
         </title>
-        {machines.map((machine) => {
-          const w = machine.x * SCALE;
-          const h = machine.y * SCALE;
-          const x = 8;
-          const y = 8 + (maxY - machine.y) * SCALE;
-          return (
-            <g key={machine.id}>
-              <rect x={x} y={y} width={w} height={h} fill="none" stroke="#29235C" strokeWidth="1.25" />
-            </g>
-          );
-        })}
+        {[...machines]
+          .sort((a, b) => b.x * b.y - a.x * a.y)
+          .map((machine) => {
+            const w = machine.x * SCALE;
+            const h = machine.y * SCALE;
+            const x = 8;
+            const y = 8 + (maxY - machine.y) * SCALE;
+            const stroke =
+              machine.id === "bridgeport-xr-1270"
+                ? { color: "#3D9BD6", dash: "2 2.4", width: 1.6 }
+                : machine.id === "hartford-lg-1370"
+                  ? { color: "#29235C", dash: "5 3", width: 1.2 }
+                  : { color: "#29235C", dash: undefined, width: 1.7 };
+            return (
+              <rect
+                key={machine.id}
+                x={x}
+                y={y}
+                width={w}
+                height={h}
+                fill="none"
+                stroke={stroke.color}
+                strokeWidth={stroke.width}
+                strokeDasharray={stroke.dash}
+              />
+            );
+          })}
         <text x="8" y={height - 8} fill="#29235C" fontFamily="var(--font-martian), monospace" fontSize="9">
           X0 Y0
         </text>
       </svg>
       <figcaption className="caption max-w-[68ch]">
         {de
-          ? "Drei dokumentierte Arbeitsräume, linksbündig auf X0 Y0. Aussenmass: Hartford MVP 16, X 1600 · Y 820. Z steht in der Tabelle, nicht in dieser Draufsicht."
-          : "Drie gedocumenteerde werkbereiken, links uitgelijnd op X0 Y0. Buitenmaat: Hartford MVP 16, X 1600 · Y 820. Z staat in de tabel, niet in dit bovenaanzicht."}
+          ? "Drei dokumentierte Arbeitsräume, linksbündig auf X0 Y0. Außenmaß: Hartford MVP 16, X 1600 · Y 820, durchgezogen. LG 1370 gestrichelt. Bridgeport XR 1270 in der Werkzeugbahnfarbe. Z steht in der Tabelle, nicht in dieser Draufsicht."
+          : "Drie gedocumenteerde werkbereiken, links uitgelijnd op X0 Y0. Buitenmaat: Hartford MVP 16, X 1600 · Y 820, getrokken lijn. LG 1370 gestippeld. Bridgeport XR 1270 in de kleur van de gereedschapsbaan. Z staat in de tabel, niet in dit bovenaanzicht."}
       </figcaption>
       <ul className="mt-3 list-none p-0 m-0">
         {machines.map((machine) => (

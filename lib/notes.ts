@@ -16,7 +16,6 @@ export const notes: Record<AppSlug, Note> = {
     paragraphs: [
       "EPS-vormen zijn een eigen fotocategorie op de site, naast spuitgietwerk, rotatie, blisters en vrije vorm. De vorm geeft het EPS-deel zijn holte.",
       "Op de foto’s staat het werk in de machine: een grote donkere plaat, de frees trekt een golvende holte. Het materiaal van die plaat staat niet bij de foto. De Bridgeport XR 1270 is op de site opgegeven voor hout, kunststof en aluminium.",
-      "Het pad is hetzelfde als bij de andere matrijzen. Wij ontwikkelen met 3D CAD-CAM, frezen op een eigen centrum, werken af waar nodig en leveren zelf af.",
     ],
     sheet: [
       { k: "Categorie", v: "EPS-vormen, een van de zes toepassingen." },
@@ -49,7 +48,6 @@ export const notes: Record<AppSlug, Note> = {
     deText: "Rotationsformen, oft zwei Hälften, gefräst und selbst ausgeliefert.",
     paragraphs: [
       "Bij rotatiegieten draait de vorm. De kunststof verdeelt zich langs de wand. Wij frezen die vorm, niet het eindproduct.",
-      "In de foto’s zitten vaak twee helften: een diepe holte en een vlakker deksel, met flens en een rand vol boringen. De eerste opname ligt op een werkbank.",
       "Er is een video, Rotatievorm. Die laadt pas als u op afspelen drukt. Tien foto’s staan in de galerij hieronder.",
     ],
     sheet: [
@@ -67,7 +65,6 @@ export const notes: Record<AppSlug, Note> = {
     paragraphs: [
       "Een blistermatrijs volgt het product. De holte is het flesje, het glas of de bak die de folie moet pakken.",
       "Op één opname staan vier stappen naast elkaar: een model, de aluminium matrijs, de gevormde zwarte tray en de verpakking met miniatuurflesjes. Zo is te zien wat de holte doet.",
-      "Vacuümgaatjes boren we waar de matrijs dat vraagt. Daarna schoonmaken en zelf bij u afleveren. Vier foto’s staan in de galerij.",
     ],
     sheet: [
       { k: "Categorie", v: "Blistermatrijzen voor thermo- en vacuümvormen." },
@@ -84,7 +81,7 @@ export const notes: Record<AppSlug, Note> = {
     paragraphs: [
       "Vrije vorm is het werk dat niet in EPS, spuitgieten, rotatie of blister valt. Prototypes horen daarbij. De map op de oude site heette ook zo.",
       "De serie is gemengd. Er zijn ringen van licht materiaal op een plaat, en aluminium delen, waaronder een lange plaat met ovale sleuven en een koperkleurige leiding.",
-      "Het pad blijft hetzelfde: 3D CAD-CAM, frezen op een eigen centrum, afwerken waar nodig, schoonmaken en zelf afleveren. Zestien opnames.",
+      "Zestien opnames, modellen en aluminium werk door elkaar.",
     ],
     sheet: [
       { k: "Categorie", v: "Vrij frezen en prototypes." },
@@ -99,9 +96,7 @@ export const notes: Record<AppSlug, Note> = {
     deTitle: "Plugs (plug assist)",
     deText: "Plug assist für das Formen. Keine Plug-Fotos auf der bisherigen Website, wohl das Video Plug.",
     paragraphs: [
-      "De plug is het positief dat de warme plaat of folie voorgaat, voordat de matrijs het vlak trekt. In het vak heet dat een plug assist.",
-      "Op de video Plug is dat te zien. De video laadt pas na een klik, via youtube-nocookie. Foto’s van plugs staan niet op de huidige site.",
-      "De foto onder de video is vrij gefreesd werk uit een andere categorie. Hij staat er als voorbeeld van het frezen, niet als plug.",
+      "De plug is het positief dat de warme plaat of folie voorgaat, voordat de matrijs het vlak trekt. In het vak heet dat een plug assist. De video Plug laadt pas na een klik.",
     ],
     sheet: [
       { k: "Categorie", v: "Plugs, plug assist." },
