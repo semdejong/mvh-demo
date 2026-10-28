@@ -77,7 +77,7 @@ export const content = {
   values: [
     {
       title: "Levertijd",
-      text: "Levertijd hoort bij de vijf punten die we hoog houden. Een termijn spreken we per matrijs af. Een vaste doorlooptijd staat niet op de site.",
+      text: "Levertijd hoort bij de vijf punten die we hoog houden. Een termijn spreken we per matrijs af.",
     },
     {
       title: "Kwaliteit",
@@ -98,7 +98,7 @@ export const content = {
   ],
 
   valuesDe: [
-    { title: "Lieferzeit", text: "Lieferzeit steht bei uns hoch im Kurs. Eine Frist sprechen wir je Werkzeug ab. Eine feste Durchlaufzeit steht nicht auf der Website." },
+    { title: "Lieferzeit", text: "Lieferzeit steht bei uns hoch im Kurs. Eine Frist sprechen wir je Werkzeug ab." },
     { title: "Qualität", text: "Das Werkzeug wird gefräst, wo nötig weiterbearbeitet und gereinigt, bevor es das Haus verlässt." },
     { title: "Flexibilität", text: "Wir denken lösungsorientiert mit, von der Zeichnung bis zur Nacharbeit." },
     { title: "Kompetenz", text: "Wir entwickeln selbst mit einem 3D-CAD-CAM-Programm und fräsen auf eigenen CNC-Bearbeitungszentren." },
@@ -112,7 +112,7 @@ export const content = {
       title: "Ontwerpen",
       detail: "3D CAD-CAM",
       text: "We ontwikkelen de matrijs of vorm zelf met een 3D CAD-CAM pakket (Mastercam) en denken oplossingsgericht mee.",
-      more: "U stuurt een 2D-tekening of een 3D-model. Wij zetten daar het freesprogramma uit. Op de huidige site staat Mastercam X5; de versie die nu draait is nog niet bevestigd. Een schermafbeelding van het pakket staat er niet bij.",
+      more: "U stuurt een 2D-tekening of een 3D-model. Wij zetten daar het freesprogramma uit. Het CAM-programma is Mastercam.",
     },
     {
       id: "frezen",
@@ -120,7 +120,7 @@ export const content = {
       title: "Frezen",
       detail: "cnc",
       text: "Daarna frezen we het programma op een van onze eigen cnc-bewerkingscentra.",
-      more: "Welke bank het wordt, hangt af van afmeting, toepassing of uitgangsmateriaal. Drie machines staan met werkbereik op de site. De grootste is de Hartford MVP 16: X 1600 · Y 820 · Z 600 mm.",
+      more: "Welke bank het wordt, hangt af van afmeting, toepassing of uitgangsmateriaal. Het grootste werkbereik heeft de de Hartford MVP 16: X 1600 · Y 820 · Z 600 mm.",
     },
     {
       id: "afwerken",
@@ -136,7 +136,7 @@ export const content = {
       title: "Afleveren",
       detail: "bij de klant",
       text: "De matrijs leveren we zelf bij de klant af.",
-      more: "U heeft één partij van tekening tot lossen. Een foto van het transport staat niet op de site. Wel staat er werk klaar op een pallet in de hal.",
+      more: "U heeft één partij van tekening tot lossen. Geen tussenpartij voor het transport.",
     },
   ],
 
@@ -194,8 +194,8 @@ export const content = {
 
   cam: {
     nameOnSite: "Mastercam X5",
-    note: "Mastercam X5 is een versie uit 2010. De versie die nu draait: [door klant te bevestigen].",
-    noteDe: "Mastercam X5 ist eine Version von 2010. Die Version, die jetzt läuft: [vom Kunden zu bestätigen].",
+    note: "Programmeren gebeurt in het 3D CAD/CAM-systeem Mastercam.",
+    noteDe: "Programmiert wird im 3D-CAD/CAM-System Mastercam.",
   },
 
   videos: [
@@ -237,7 +237,7 @@ export const content = {
         "Spuitgietmatrijzen van MVH in Haaksbergen. Holtes en inzetstukken, gefreesd op eigen cnc-bewerkingscentra, afgewerkt en zelf afgeleverd.",
       paragraphs: [
         "Matrijzen voor spuitgietwerk. Holtes, inzetstukken en pasvlakken frezen we op onze eigen bewerkingscentra.",
-        "Afmeting en uitgangsmateriaal bepalen op welke freesbank het programma draait. Het grootste bereik dat op de site staat is X 1600 · Y 820 · Z 600 mm (Hartford MVP 16).",
+        "Afmeting en uitgangsmateriaal bepalen op welke freesbank het programma draait. Het grootste werkbereik is X 1600 · Y 820 · Z 600 mm (Hartford MVP 16).",
       ],
     },
     {
@@ -288,12 +288,12 @@ export const content = {
       title: "Plugs",
       short: "Plugs",
       h1: "Plugs (plug assist)",
-      summary: "Plug assist voor het vormen. Geen plugfoto’s op de huidige site; wel de video Plug.",
+      summary: "Plug assist voor het vormen, met de video Plug.",
       description:
-        "Plugs (plug assist) van MVH in Haaksbergen. De video Plug staat op deze pagina. Foto’s van plugs staan niet op de huidige site.",
+        "Plugs (plug assist) van MVH in Haaksbergen. De video Plug staat op deze pagina.",
       paragraphs: [
         "Een plug, of plug assist, helpt de plaat of folie in de matrijs tijdens het thermo- of vacuümvormen.",
-        "Op de huidige site staan geen foto’s van plugs. Onder de video Plug staat een foto uit ander werk, duidelijk als voorbeeld van het frezen. Dat is geen plug.",
+        "Onder de video Plug staat een foto uit ander werk, als voorbeeld van het frezen. Dat is geen plug.",
       ],
     },
   ],

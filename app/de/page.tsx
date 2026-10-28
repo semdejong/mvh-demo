@@ -112,10 +112,10 @@ export default function GermanHome() {
               <h2 className="display">Vom Modell bis zur Lieferung</h2>
               <Programme
                 rows={[
-                  { k: "OP 10", v: "Entwickeln mit 3D-CAD-CAM, lösungsorientiert. Auf der Website steht Mastercam X5." },
+                  { k: "OP 10", v: "Entwickeln mit 3D-CAD-CAM (Mastercam), lösungsorientiert." },
                   { k: "OP 20", v: "Fräsen auf einem eigenen CNC-Bearbeitungszentrum, je nach Maß, Anwendung oder Material." },
                   { k: "OP 30", v: "Nacharbeit wo nötig, zum Beispiel Vakuumbohrungen, danach reinigen." },
-                  { k: "OP 40", v: "Eigene Lieferung beim Kunden. Ein Foto des Transports steht nicht auf der Website." },
+                  { k: "OP 40", v: "Eigene Lieferung beim Kunden." },
                 ]}
               />
             </div>
@@ -142,7 +142,7 @@ export default function GermanHome() {
             <p className="kicker">RAUM</p>
             <div>
               <h2 className="display">Maschinenpark</h2>
-              <p className="lede">Drei Fräsmaschinen sind mit Maßen dokumentiert. Die Website nennt sechs. {content.cam.noteDe}</p>
+              <p className="lede">Drei Bearbeitungszentren aus dem Maschinenpark, mit Verfahrwegen. {content.cam.noteDe}</p>
               <Envelopes locale="de" />
               <p className="mt-4">
                 <Link href="/de/maschinenpark" className="text-navy">

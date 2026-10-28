@@ -20,11 +20,11 @@ const faq = [
   },
   {
     q: "Wat is de maximale afmeting die jullie kunnen frezen?",
-    a: "Het grootste bereik dat op de site staat, is de Hartford MVP 16: X 1600 mm, Y 820 mm, Z 600 mm. Of een stuk daarbinnen past, hangt af van de vorm en de opspanning. Dat beoordelen we aan de tekening.",
+    a: "Het grootste werkbereik heeft de Hartford MVP 16: X 1600 mm, Y 820 mm, Z 600 mm. Of een stuk daarbinnen past, hangt af van de vorm en de opspanning. Dat beoordelen we aan de tekening.",
   },
   {
     q: "Welke materialen frezen jullie?",
-    a: "De Bridgeport XR 1270 is op de site opgegeven voor hout, kunststof en aluminium. Materialen op de andere machines: [door klant te bevestigen].",
+    a: "De Bridgeport XR 1270 is geschikt voor hout, kunststof en aluminium. Materialen op de andere machines: [door klant te bevestigen].",
   },
   {
     q: "Boren jullie ook de vacuümgaatjes en maken jullie de matrijs schoon?",
@@ -44,7 +44,7 @@ const faq = [
   },
   {
     q: "Hoe snel kan een matrijs klaar zijn?",
-    a: "Een doorlooptijd staat niet op de site. [door klant te bevestigen]. We noemen geen aantal dagen.",
+    a: "Dat hangt af van de matrijs. Levertijd is een van onze vijf punten; een termijn spreken we per opdracht af.",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function OffertePage() {
             </p>
             <div>
               <h2 className="display">Grootste werkbereik</h2>
-              <p className="lede">Hartford MVP 16, het grootste bereik dat op de site gedocumenteerd is.</p>
+              <p className="lede">Hartford MVP 16, het grootste werkbereik in het machinepark.</p>
               <div className="mt-6">
                 <EnvelopeDrawing />
               </div>

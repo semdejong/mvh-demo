@@ -14,8 +14,8 @@ export const notes: Record<AppSlug, Note> = {
     deTitle: "EPS-Formen",
     deText: "Formen für EPS. Entwickelt mit 3D-CAD-CAM, gefräst und selbst geliefert.",
     paragraphs: [
-      "EPS-vormen zijn een eigen fotocategorie op de site, naast spuitgietwerk, rotatie, blisters en vrije vorm. De vorm geeft het EPS-deel zijn holte.",
-      "Op de foto’s staat het werk in de machine: een grote donkere plaat, de frees trekt een golvende holte. Het materiaal van die plaat staat niet bij de foto. De Bridgeport XR 1270 is op de site opgegeven voor hout, kunststof en aluminium.",
+      "EPS-vormen zijn een van de zes toepassingen, naast spuitgietwerk, rotatie, blisters, vrije vorm en plugs. De vorm geeft het EPS-deel zijn holte.",
+      "Op de foto’s staat het werk in de machine: een grote donkere plaat, de frees trekt een golvende holte. De Bridgeport XR 1270 is geschikt voor hout, kunststof en aluminium.",
     ],
     sheet: [
       { k: "Categorie", v: "EPS-vormen, een van de zes toepassingen." },
@@ -32,13 +32,13 @@ export const notes: Record<AppSlug, Note> = {
     paragraphs: [
       "Spuitgietwerk staat los van thermo- en vacuümvormen, als eigen categorie. Holtes, inzetstukken en pasvlakken frezen we op de cnc.",
       "De foto’s tonen grote aluminium matrijshelften: gebogen holtes, sleuven, boringen en messing bussen. Eén helft ligt op een pallet in de hal.",
-      "Welke freesbank het programma draait, volgt uit afmeting en uitgangsmateriaal. Het grootste bereik op de site is de Hartford MVP 16.",
+      "Welke freesbank het programma draait, volgt uit afmeting en uitgangsmateriaal. Het grootste werkbereik heeft de Hartford MVP 16.",
     ],
     sheet: [
       { k: "Categorie", v: "Matrijzen voor spuitgietwerk." },
       { k: "Op de foto", v: "Acht opnames van aluminium werk, waaronder een grote helft op een pallet." },
       { k: "Wat zichtbaar is", v: "Gebogen holte, sleuven, boringen, messing bussen." },
-      { k: "Bereik", v: "X 1600 · Y 820 · Z 600 mm is het grootste bereik dat de site noemt." },
+      { k: "Bereik", v: "X 1600 · Y 820 · Z 600 mm is het grootste werkbereik (Hartford MVP 16)." },
       { k: "Afleveren", v: "De matrijs gaat schoon de deur uit en wordt door ons bij u afgeleverd." },
     ],
   },
@@ -79,7 +79,7 @@ export const notes: Record<AppSlug, Note> = {
     deTitle: "Freiform und Prototypen",
     deText: "Frei gefräste Formen und Prototypen außerhalb der festen Kategorien.",
     paragraphs: [
-      "Vrije vorm is het werk dat niet in EPS, spuitgieten, rotatie of blister valt. Prototypes horen daarbij. De map op de oude site heette ook zo.",
+      "Vrije vorm is het werk dat niet in EPS, spuitgieten, rotatie of blister valt. Prototypes horen daarbij.",
       "De serie is gemengd. Er zijn ringen van licht materiaal op een plaat, en aluminium delen, waaronder een lange plaat met ovale sleuven en een koperkleurige leiding.",
       "Zestien opnames, modellen en aluminium werk door elkaar.",
     ],
@@ -102,7 +102,7 @@ export const notes: Record<AppSlug, Note> = {
       { k: "Categorie", v: "Plugs, plug assist." },
       { k: "Rol", v: "De plug helpt de plaat of folie in de matrijs tijdens het vormen." },
       { k: "Video", v: "Plug, kanaal @mvhaaksbergen." },
-      { k: "Foto’s", v: "Geen plugfoto’s op de huidige site." },
+      
       { k: "Voorbeeld", v: "De stilstaande foto is ander werk en is zo gemarkeerd." },
     ],
   },

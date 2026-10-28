@@ -38,7 +38,7 @@ export default function MachineparkPage() {
             </p>
             <div>
               <h2 className="display">Specificatie</h2>
-              <p className="lede">Maten zoals ze op de huidige site staan. Niets aangevuld.</p>
+              <p className="lede">Drie bewerkingscentra met hun werkbereik in millimeters.</p>
               <div className="mt-6 overflow-x-auto">
                 <MachineSheet />
               </div>
@@ -72,7 +72,7 @@ export default function MachineparkPage() {
             <div>
               <h2 className="display">Drie banken, drie bladen</h2>
               <p className="lede">
-                Alleen wat de site zelf invult. De Bridgeport is de enige met spindel en materiaal. De Hartford MVP 16 heeft het grootste vlak. De LG 1370 zit daar tussenin.
+                De Hartford MVP 16 heeft het grootste werkbereik, de Bridgeport XR 1270 de krachtigste opgegeven spindel. De LG 1370 zit daar tussenin.
               </p>
               <Programme
                 rows={[
@@ -82,15 +82,11 @@ export default function MachineparkPage() {
                   },
                   {
                     k: "MVP 16",
-                    v: "Hartford, 3-assig. X 1600 · Y 820 · Z 600. Grootste gedocumenteerde werkbereik. Spindel en materiaal staan er niet bij.",
+                    v: "Hartford, 3-assig. X 1600 · Y 820 · Z 600. Grootste gedocumenteerde werkbereik. ",
                   },
                   {
                     k: "LG 1370",
-                    v: "Hartford, 3-assig. X 1300 · Y 700 · Z 600. Verdere gegevens staan niet op de site.",
-                  },
-                  {
-                    k: "4 · 5 · 6",
-                    v: "[door klant aan te vullen]. De site noemt zes freesbanken en documenteert er drie.",
+                    v: "Hartford, 3-assig. X 1300 · Y 700 · Z 600. Verticaal bewerkingscentrum.",
                   },
                   {
                     k: "CAM",
@@ -139,7 +135,7 @@ export default function MachineparkPage() {
                       style={{ maxWidth: hall.w }}
                     />
                   </MillReveal>
-                  <figcaption className="caption">Machinehal, opname 2021. Drie bewerkingscentra in beeld. De site noemt er zes.</figcaption>
+                  <figcaption className="caption">Machinehal, opname 2021. Drie bewerkingscentra in beeld.</figcaption>
                 </figure>
               ) : null}
               <CtaRow />

@@ -104,7 +104,7 @@ export default function HomePage() {
             </p>
             <div>
               <h2 className="display">Toepassingen</h2>
-              <p className="lede">Zes soorten werk, met foto’s uit de werkplaats. Van plugs staat geen foto op de site.</p>
+              <p className="lede">Zes soorten werk, met foto’s uit de werkplaats.</p>
               <ApplicationIndex />
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
             <div>
               <h2 className="display">Machinepark</h2>
               <p className="lede">
-                Drie freesbanken staan met maten op de site. Het grootste bereik is de Hartford MVP 16. De site noemt zes machines; de andere drie zijn niet ingevuld.
+                Drie bewerkingscentra uit het machinepark, met hun werkbereik. Het grootste bereik heeft de Hartford MVP 16.
               </p>
               <div className="mt-6">
                 <Envelopes />

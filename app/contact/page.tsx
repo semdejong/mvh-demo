@@ -22,7 +22,7 @@ export default function ContactPage() {
       <PageIntro
         kicker="ADRES"
         title="Contact"
-        lede="Geen algemeen info-adres op de site. Twee contactpersonen, met hun eigen e-mail."
+        lede="Twee contactpersonen, elk met een eigen e-mailadres."
       >
         <p>
           <a className="btn btn-primary" href="/offerte" data-cta="offerte">

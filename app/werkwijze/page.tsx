@@ -29,7 +29,7 @@ export default function WerkwijzePage() {
         lede="Eén werkplaats doet het hele pad: zelf ontwikkelen, frezen, afwerken en zelf bij de klant afleveren. Geen tussenpartij voor het programma, de bank of het transport."
       >
         <p className="measure">
-          De vier stappen staan zo op de huidige site. Hieronder elke stap, met wat u in de werkplaats ziet en wat nog niet op de site staat.
+          Hieronder elke stap, met wat u in de werkplaats ziet.
         </p>
       </PageIntro>
       <section data-section="werkwijze" className="section">
@@ -91,7 +91,7 @@ export default function WerkwijzePage() {
                   v: item,
                 }))}
               />
-              <p className="measure">Een reactietermijn en een vaste levertijd staan niet op de site. Die spreken we per matrijs af.</p>
+              <p className="measure">Een levertijd spreken we per matrijs af.</p>
               <CtaRow />
             </div>
           </div>

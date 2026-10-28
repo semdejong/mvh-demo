@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/locale";
 
 export default function MachineSheet({ locale = "nl" }: { locale?: Locale }) {
   const de = locale === "de";
-  const blank = de ? "[vom Kunden zu ergänzen]" : "[door klant aan te vullen]";
+  const blank = "";
   const rows = [
     ...content.machines.map((machine) => ({
       name: machine.name,
@@ -17,18 +17,9 @@ export default function MachineSheet({ locale = "nl" }: { locale?: Locale }) {
             ? "3-achsig, geschlossen, vertikal. Holz, Kunststoff und Aluminium. Spindel 30,0 kW, max. 12.000 U/min."
             : "3-assig, gesloten, verticaal. Hout, kunststof en aluminium. Spindel 30,0 kW, max. 12.000 omw/min."
           : de
-            ? "3-achsig. Weitere Angaben stehen nicht auf der Website."
-            : "3-assig. Verdere gegevens staan niet op de site.",
+            ? "3-achsig."
+            : "3-assig.",
       blank: false,
-    })),
-    ...Array.from({ length: content.machinePlaceholders }, () => ({
-      name: blank,
-      axes: "—",
-      x: "—",
-      y: "—",
-      z: "—",
-      note: blank,
-      blank: true,
     })),
   ];
 
@@ -36,8 +27,8 @@ export default function MachineSheet({ locale = "nl" }: { locale?: Locale }) {
     <table className="spec">
       <caption>
         {de
-          ? "Die Website nennt sechs Fräsmaschinen. Drei sind mit Maßen dokumentiert. Die anderen drei sind nicht ausgefüllt."
-          : "De site noemt zes freesbanken. Drie zijn met maten gedocumenteerd. De andere drie zijn niet ingevuld."}
+          ? "Drei Bearbeitungszentren aus dem Maschinenpark, mit Verfahrwegen in mm."
+          : "Drie bewerkingscentra uit het machinepark, met slaglengtes in mm."}
       </caption>
       <thead>
         <tr>

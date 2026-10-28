@@ -44,7 +44,7 @@ export default function PrivacyPage() {
             </a>
           </p>
           <p>
-            Een algemeen info-adres staat niet op de huidige site. Namen en e-mailadressen van contactpersonen staan op de{" "}
+            Namen en e-mailadressen van contactpersonen staan op de{" "}
             <Link href="/contact" className="text-navy">
               contactpagina
             </Link>

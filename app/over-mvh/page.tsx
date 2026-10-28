@@ -28,7 +28,7 @@ export default function OverPage() {
           Het bedrijf is sinds januari 2008 actief en begon met één nieuw cnc-bewerkingscentrum. Na twee maanden kwam de tweede, doordat de vraag naar matrijzen en vormen toenam en de productie snel groeide.
         </p>
         <p className="measure">
-          Vijf punten houden ze hoog, en ze noemen die mede als reden dat het werk toenam: levertijd, kwaliteit, flexibiliteit, vakkundigheid en een goede prijs-kwaliteitverhouding. Geen van die punten staat als getal op de site.
+          Vijf punten staan bij ons hoog in het vaandel, en mede daardoor nam het werk toe: levertijd, kwaliteit, flexibiliteit, vakkundigheid en een goede prijs-kwaliteitverhouding.
         </p>
       </PageIntro>
 
@@ -51,8 +51,8 @@ export default function OverPage() {
                     <p className="m-0">Een tweede centrum, omdat de vraag naar matrijzen en vormen toenam en de productie snel groeide.</p>
                   </li>
                   <li>
-                    <p className="mono text-navy text-xs m-0">Op de huidige site</p>
-                    <p className="m-0">Zes freesbanken genoemd. Drie met maten: Bridgeport XR 1270, Hartford MVP 16, Hartford LG 1370. De andere drie zijn niet ingevuld.</p>
+                    <p className="mono text-navy text-xs m-0">Nu</p>
+                    <p className="m-0">Een machinepark met onder meer de Bridgeport XR 1270, de Hartford MVP 16 en de Hartford LG 1370.</p>
                   </li>
                 </ol>
               </div>
@@ -132,7 +132,7 @@ export default function OverPage() {
             <p className="kicker">TEAM</p>
             <div>
               <h2 className="display">Team</h2>
-              <p className="lede">Op de site staan twee namen, zonder functietitel. E-mail en mobiel staan op de contactpagina en bij de aanvraag.</p>
+              <p className="lede">Lutz en Angela Noordink. E-mail en mobiel staan op de contactpagina en bij de aanvraag.</p>
               <ul className="check-list">
                 {people.map((person) => (
                   <li key={person.email}>

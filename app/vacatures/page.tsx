@@ -34,7 +34,7 @@ export default function VacaturesPage() {
                 <Programme
                   rows={[
                     { k: "Open", v: "Geen. Momenteel zijn er geen vacatures." },
-                    { k: "Functies", v: "Niet vermeld op de site." },
+                    { k: "Functies", v: "Op dit moment geen." },
                     { k: "Open sollicitatie", v: "[door klant te bevestigen]. Tot die tijd staat hier geen sollicitatie-adres." },
                     { k: "Werk in de hal", v: "Matrijzen en vormen: 3D CAD-CAM, frezen, afwerken, zelf afleveren." },
                   ]}
@@ -58,7 +58,7 @@ export default function VacaturesPage() {
                     className="w-full h-auto border border-navy"
                     style={{ maxWidth: hall.w }}
                   />
-                  <figcaption className="caption">Machinehal, opname 2021. Drie bewerkingscentra. De site noemt er zes.</figcaption>
+                  <figcaption className="caption">Machinehal, opname 2021. Drie bewerkingscentra in beeld.</figcaption>
                 </figure>
               ) : null}
             </div>

@@ -64,7 +64,7 @@ export default async function ApplicationPage({ params }: { params: Promise<{ sl
             <div className="pair">
               <div>
                 <h2 className="display">Op dit blad</h2>
-                <p className="lede">De feiten die bij deze toepassing horen. Niets aangevuld voorbij de site en de foto’s.</p>
+                <p className="lede">Wat deze toepassing is, en wat we ervoor maken.</p>
                 <Programme rows={note.sheet} />
               </div>
               {lead ? (
@@ -99,7 +99,7 @@ export default async function ApplicationPage({ params }: { params: Promise<{ sl
               {app.slug === "plugs" ? (
                 <div className="grid gap-6 mt-4">
                   <p className="measure">
-                    Er zijn geen plugfoto’s op de huidige site. De video Plug laadt pas na een klik. De foto eronder is een voorbeeld van vrij gefreesd werk, geen plug.
+                    De video Plug laadt pas na een klik. De foto eronder is een voorbeeld van vrij gefreesd werk, geen plug.
                   </p>
                   {plugVideo && poster ? <YoutubeFacade videoId={plugVideo.id} title={plugVideo.title} poster={poster} /> : null}
                   {example ? (

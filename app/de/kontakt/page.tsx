@@ -22,7 +22,7 @@ export default function GermanContact() {
       <PageIntro
         kicker="ADRESSE"
         title="Kontakt"
-        lede="Keine allgemeine Info-Adresse auf der Website. Zwei Ansprechpartner mit eigener E-Mail."
+        lede="Zwei Ansprechpartner, jeweils mit eigener E-Mail-Adresse."
       >
         <p>
           <Link className="btn btn-primary" href="/offerte" data-cta="offerte">
