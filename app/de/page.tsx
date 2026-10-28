@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/content";
+import { notes } from "@/lib/notes";
 import { photoBySrc } from "@/lib/photos";
 import PageIntro from "@/components/site/PageIntro";
+import Programme from "@/components/site/Programme";
 import { Tick } from "@/components/site/Marks";
 import Envelopes from "@/components/drawing/Envelopes";
 
@@ -80,6 +82,52 @@ export default function GermanHome() {
                     <Tick />
                     <strong>{value.title}</strong>
                     <span>{value.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="pad" className="section">
+        <div className="wrap">
+          <div className="section-grid">
+            <p className="kicker" data-toolpath-node>
+              OP 10–40
+            </p>
+            <div>
+              <h2 className="display">Vom Modell bis zur Lieferung</h2>
+              <Programme
+                rows={[
+                  { k: "OP 10", v: "Entwickeln mit 3D-CAD-CAM, lösungsorientiert. Auf der Website steht Mastercam X5." },
+                  { k: "OP 20", v: "Fräsen auf einem eigenen CNC-Bearbeitungszentrum, je nach Maß, Anwendung oder Material." },
+                  { k: "OP 30", v: "Nacharbeit wo nötig, zum Beispiel Vakuumbohrungen, danach reinigen." },
+                  { k: "OP 40", v: "Eigene Lieferung beim Kunden. Ein Foto des Transports steht nicht auf der Website." },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="toepassingen" className="section">
+        <div className="wrap">
+          <div className="section-grid">
+            <p className="kicker">WERK</p>
+            <div>
+              <h2 className="display">Anwendungen</h2>
+              <p className="lede">Sechs Eingänge. Die Fotoseiten stehen auf Niederländisch, mit den Werkstattfotos.</p>
+              <ul className="index-list mt-4">
+                {content.applications.map((app) => (
+                  <li key={app.slug} className="index-row">
+                    <Link href={`/toepassingen/${app.slug}`}>
+                      <span>
+                        <span className="mono text-xs">{notes[app.slug].terms}</span>
+                        <strong>{notes[app.slug].deTitle}</strong>
+                        <p>{notes[app.slug].deText}</p>
+                      </span>
+                    </Link>
                   </li>
                 ))}
               </ul>

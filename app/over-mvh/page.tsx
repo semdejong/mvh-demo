@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/content";
-import { photosByCategory } from "@/lib/photos";
+import { photoBySrc, photosByCategory } from "@/lib/photos";
 import PageIntro from "@/components/site/PageIntro";
 import { Tick, CtaRow } from "@/components/site/Marks";
 
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 export default function OverPage() {
   const pand = photosByCategory("pand");
+  const hall = photoBySrc("/img/machine/machine-02.jpg");
   const { company, people } = content;
 
   return (
@@ -26,7 +27,53 @@ export default function OverPage() {
         <p className="measure">
           Het bedrijf is sinds januari 2008 actief en begon met één nieuw cnc-bewerkingscentrum. Na twee maanden kwam de tweede, doordat de vraag naar matrijzen en vormen toenam en de productie snel groeide.
         </p>
+        <p className="measure">
+          Vijf punten houden ze hoog, en ze noemen die mede als reden dat het werk toenam: levertijd, kwaliteit, flexibiliteit, vakkundigheid en een goede prijs-kwaliteitverhouding. Geen van die punten staat als getal op de site.
+        </p>
       </PageIntro>
+
+      <section data-section="tijdlijn" className="section">
+        <div className="wrap">
+          <div className="section-grid">
+            <p className="kicker" data-toolpath-node>
+              TIJD
+            </p>
+            <div className="pair">
+              <div>
+                <h2 className="display">Van één bank naar een hal</h2>
+                <ol className="timeline">
+                  <li>
+                    <p className="mono text-navy text-xs m-0">Januari 2008</p>
+                    <p className="m-0">Start met één nieuw cnc-bewerkingscentrum, in Haaksbergen.</p>
+                  </li>
+                  <li>
+                    <p className="mono text-navy text-xs m-0">Twee maanden later</p>
+                    <p className="m-0">Een tweede centrum, omdat de vraag naar matrijzen en vormen toenam en de productie snel groeide.</p>
+                  </li>
+                  <li>
+                    <p className="mono text-navy text-xs m-0">Op de huidige site</p>
+                    <p className="m-0">Zes freesbanken genoemd. Drie met maten: Bridgeport XR 1270, Hartford MVP 16, Hartford LG 1370. De andere drie zijn niet ingevuld.</p>
+                  </li>
+                </ol>
+              </div>
+              {hall ? (
+                <figure className="m-0">
+                  <Image
+                    src={hall.src}
+                    alt={hall.alt}
+                    width={hall.w}
+                    height={hall.h}
+                    sizes="(max-width: 860px) 100vw, 480px"
+                    className="w-full h-auto border border-navy"
+                    style={{ maxWidth: hall.w }}
+                  />
+                  <figcaption className="caption">De hal in 2021, met drie gesloten bewerkingscentra in beeld.</figcaption>
+                </figure>
+              ) : null}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section data-section="pand" className="section">
         <div className="wrap">
@@ -37,7 +84,10 @@ export default function OverPage() {
             <div>
               <h2 className="display">Het pand</h2>
               <p className="lede">
-                {company.street}, {company.postalCode} {company.city}. {company.border}.
+                {company.street}, {company.postalCode} {company.city}. Het pand staat op een {company.border}. De rode gevel met de gebogen glaspartij is het gebouw op de foto’s.
+              </p>
+              <p className="measure">
+                Openingstijden: {company.hours}. Parkeren en laden en lossen: {company.parking}. KvK: {company.kvk}.
               </p>
               <ul className="mosaic mt-6">
                 {pand.map((photo) => (

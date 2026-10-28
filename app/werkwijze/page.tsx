@@ -3,6 +3,7 @@ import Image from "next/image";
 import { content } from "@/content";
 import { photoBySrc } from "@/lib/photos";
 import PageIntro from "@/components/site/PageIntro";
+import Programme from "@/components/site/Programme";
 import { CtaRow } from "@/components/site/Marks";
 import MillReveal from "@/components/media/MillReveal";
 
@@ -25,8 +26,12 @@ export default function WerkwijzePage() {
       <PageIntro
         kicker="OP 10–40"
         title="Van tekening tot afleveren"
-        lede="Eén werkplaats doet het hele pad: zelf ontwikkelen, frezen, afwerken en zelf bij de klant afleveren."
-      />
+        lede="Eén werkplaats doet het hele pad: zelf ontwikkelen, frezen, afwerken en zelf bij de klant afleveren. Geen tussenpartij voor het programma, de bank of het transport."
+      >
+        <p className="measure">
+          De vier stappen staan zo op de huidige site. Hieronder elke stap, met wat u in de werkplaats ziet en wat nog niet op de site staat.
+        </p>
+      </PageIntro>
       <section data-section="werkwijze" className="section">
         <div className="wrap">
           <div className="steps">
@@ -41,11 +46,7 @@ export default function WerkwijzePage() {
                     </p>
                     <h2 className="display">{step.title}</h2>
                     <p className="measure">{step.text}</p>
-                    {step.id === "ontwerpen" ? (
-                      <p className="measure">
-                        Op de site staat Mastercam X5. {content.cam.note} Een schermafbeelding van het pakket staat er niet op. De tekening hiernaast is een schematische baan, geen werkstuk.
-                      </p>
-                    ) : null}
+                    <p className="measure">{step.more}</p>
                   </div>
                   {photo ? (
                     <MillReveal>
@@ -73,7 +74,27 @@ export default function WerkwijzePage() {
               );
             })}
           </div>
-          <CtaRow />
+        </div>
+      </section>
+      <section data-section="aanleveren" className="section">
+        <div className="wrap">
+          <div className="section-grid">
+            <p className="kicker" data-toolpath-node>
+              MEESTUREN
+            </p>
+            <div>
+              <h2 className="display">Wat het programma nodig heeft</h2>
+              <p className="lede">Zonder deze vijf regels blijft de matrijs een schets. Met ze kunnen we meedenken.</p>
+              <Programme
+                rows={content.aanleveren.map((item, index) => ({
+                  k: `R ${index + 1}`,
+                  v: item,
+                }))}
+              />
+              <p className="measure">Een reactietermijn en een vaste levertijd staan niet op de site. Die spreken we per matrijs af.</p>
+              <CtaRow />
+            </div>
+          </div>
         </div>
       </section>
     </>

@@ -390,11 +390,15 @@ h2.display {
 }
 
 .caption {
-  grid-column: 2;
-  margin: 0.15rem 0 0;
+  display: block;
+  margin: 0.35rem 0 0;
   font-size: 0.82rem;
   line-height: 1.45;
   max-width: 68ch;
+}
+
+.dimframe .caption {
+  grid-column: 2;
 }
 
 .mill-arm.is-in {
@@ -1265,6 +1269,70 @@ h2.display {
 .navy-band p,
 .navy-band li {
   color: #fff;
+}
+
+.programme {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--navy);
+}
+
+.programme li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.2rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 700px) {
+  .programme li {
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: baseline;
+  }
+}
+
+.programme .mono {
+  color: var(--navy);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.timeline {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 1.5px solid var(--signal);
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.35rem;
+  max-width: 68ch;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -1.45rem;
+  top: 0.45rem;
+  width: 7px;
+  height: 7px;
+  background: var(--navy);
+}
+
+.pair {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 860px) {
+  .pair {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: start;
+  }
 }
 
 .send-list {

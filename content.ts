@@ -112,6 +112,7 @@ export const content = {
       title: "Ontwerpen",
       detail: "3D CAD-CAM",
       text: "We ontwikkelen de matrijs of vorm zelf met een 3D CAD-CAM pakket (Mastercam) en denken oplossingsgericht mee.",
+      more: "U stuurt een 2D-tekening of een 3D-model. Wij zetten daar het freesprogramma uit. Op de huidige site staat Mastercam X5; de versie die nu draait is nog niet bevestigd. Een schermafbeelding van het pakket staat er niet bij.",
     },
     {
       id: "frezen",
@@ -119,6 +120,7 @@ export const content = {
       title: "Frezen",
       detail: "cnc",
       text: "Daarna frezen we het programma op een van onze eigen cnc-bewerkingscentra.",
+      more: "Welke bank het wordt, hangt af van afmeting, toepassing of uitgangsmateriaal. Drie machines staan met werkbereik op de site. De grootste is de Hartford MVP 16: X 1600 · Y 820 · Z 600 mm.",
     },
     {
       id: "afwerken",
@@ -126,6 +128,7 @@ export const content = {
       title: "Afwerken",
       detail: "waar nodig",
       text: "Indien nodig werken we verder af, bijvoorbeeld door vacuümgaatjes te boren, en maken we de matrijs schoon.",
+      more: "Niet elke matrijs heeft dezelfde nabewerking. Vacuümgaatjes boren we waar de vorm dat vraagt. Daarna gaat het werkstuk schoon de deur uit.",
     },
     {
       id: "afleveren",
@@ -133,7 +136,16 @@ export const content = {
       title: "Afleveren",
       detail: "bij de klant",
       text: "De matrijs leveren we zelf bij de klant af.",
+      more: "U heeft één partij van tekening tot lossen. Een foto van het transport staat niet op de site. Wel staat er werk klaar op een pallet in de hal.",
     },
+  ],
+
+  aanleveren: [
+    "2D-tekening of 3D-model",
+    "materiaal en plaatdikte van het te vormen product",
+    "aantallen",
+    "de vormmachine waarop de matrijs komt",
+    "gewenste levertijd",
   ],
 
   machines: [

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/content";
+import { photoBySrc } from "@/lib/photos";
 import PageIntro from "@/components/site/PageIntro";
 import People from "@/components/site/People";
+import Programme from "@/components/site/Programme";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const { company } = content;
+  const pand = photoBySrc("/img/pand/pand-01.jpg");
 
   return (
     <>
@@ -66,6 +70,50 @@ export default function ContactPage() {
                   </Link>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="route" className="section">
+        <div className="wrap">
+          <div className="section-grid">
+            <p className="kicker" data-toolpath-node>
+              ROUTE
+            </p>
+            <div className="pair">
+              <div>
+                <h2 className="display">Twee manieren</h2>
+                <Programme
+                  rows={[
+                    { k: "Bellen", v: `${company.phoneDisplay}. Voor een tekening is Lutz Noordink het aanspreekpunt op de aanvraagpagina.` },
+                    { k: "Tekening", v: "Via het formulier: 2D of 3D, materiaal, aantallen, vormmachine, gewenste levertijd." },
+                    { k: "Adres", v: `${company.street}, ${company.postalCode} ${company.city}. ${company.border}.` },
+                    { k: "Kaart", v: "Een link naar Google Maps, geen ingebedde kaart." },
+                    { k: "Open", v: `Openingstijden: ${company.hours}.` },
+                    { k: "Laden", v: `Parkeren en laden en lossen: ${company.parking}.` },
+                  ]}
+                />
+                <p>
+                  <a className="btn btn-ghost" href={company.mapsHref} target="_blank" rel="noopener noreferrer">
+                    Route in Google Maps
+                  </a>
+                </p>
+              </div>
+              {pand ? (
+                <figure className="m-0">
+                  <Image
+                    src={pand.src}
+                    alt={pand.alt}
+                    width={pand.w}
+                    height={pand.h}
+                    sizes="(max-width: 860px) 100vw, 420px"
+                    className="w-full h-auto border border-navy"
+                    style={{ maxWidth: pand.w }}
+                  />
+                  <figcaption className="caption">Metaalstraat 20a. Rode gevel, gebogen glaspartij, oprit naar de hal.</figcaption>
+                </figure>
+              ) : null}
             </div>
           </div>
         </div>

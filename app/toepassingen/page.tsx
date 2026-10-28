@@ -19,7 +19,11 @@ export default function ToepassingenPage() {
         kicker="INDEX"
         title="Toepassingen"
         lede="Zes ingangen, elk met tekst en foto’s uit de werkplaats. De oude fotogalerijen zonder tekst zijn hier vervangen."
-      />
+      >
+        <p className="measure">
+          Zoekt u een EPS-vorm, een spuitgietmatrijs, een rotatiematrijs, een blistermatrijs, een vrije vorm of een plug: elk heeft een eigen blad. De maten van de machines staan bij het machinepark, niet verstopt in een bijschrift.
+        </p>
+      </PageIntro>
       <section data-section="toepassingen" className="section">
         <div className="wrap">
           <ul className="index-list">

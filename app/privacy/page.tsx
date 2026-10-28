@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { content } from "@/content";
 import PageIntro from "@/components/site/PageIntro";
+import Programme from "@/components/site/Programme";
 
 export const metadata: Metadata = {
   title: "Privacy",
@@ -21,14 +22,16 @@ export default function PrivacyPage() {
       <section data-section="privacy" className="section">
         <div className="wrap measure">
           <h2 className="display">Wat deze conceptsite doet</h2>
+          <Programme
+            rows={[
+              { k: "Formulier", v: "Geen backend. Niets wordt opgeslagen, gemaild of geüpload." },
+              { k: "Cookies", v: "Geen volgcookies. Wel een cookieloze demo-teller voor dit concept." },
+              { k: "Zoeken", v: "noindex en robots.txt op Disallow. Niet bedoeld om geïndexeerd te worden." },
+              { k: "Echte site", v: "Verwerkingsverantwoordelijke en privacycontact: [door klant aan te vullen]." },
+            ]}
+          />
           <p>
-            De site is een concept van Sleads voor {company.legalName}. Het offerteformulier heeft geen backend. Een inzending wordt niet opgeslagen, niet gemaild en een gekozen bestand wordt niet geüpload.
-          </p>
-          <p>
-            De site zet geen volgcookies. Er draait een cookieloos bezoekteller voor de demo (script van sleads-demo-analytics, eindpunt op convex.site). Die telt een paginaweergave voor dit concept en volgt u niet over andere websites.
-          </p>
-          <p>
-            Zoekmachines krijgen noindex en robots.txt staat op Disallow. De site is niet bedoeld om geïndexeerd te worden.
+            De site is een concept van Sleads voor {company.legalName}. De teller is het script van sleads-demo-analytics, met een eindpunt op convex.site. Hij telt een paginaweergave van dit concept en volgt u niet over andere websites.
           </p>
           <h2 className="display mt-8">Bedrijf</h2>
           <p>
